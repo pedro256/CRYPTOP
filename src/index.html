@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>CRIPTOGRATOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <h1>CRIPTOGRAFADOR</h1>
+    </div>
+    <div class="container">
+        
+        <input type="file" id="findFile" hidden>
+        <label for="findFile" class="fileLabel">GERAR ARQUIVO</label>
+        <br>
+        <br>
+        <label>
+            TEXTO NORMAL:
+        </label>
+        <br>
+        <textarea id="txtNormal">
+        </textarea>
+        <br>
+        <div class="row">
+            <label>
+                CHAVE:
+            </label>
+            <input id="keyCrypt" type="text" placeholder="CHAVE DE CRIPTOGRAFIA">
+            <button onclick="Encripta()">CRIPTOGRAFAR</button>
+        </div>
+        
+    
+    </div>
+    <div class="container">
+
+        <input type="file" id="findFile" hidden>
+        <label for="findFile" class="fileLabel">ABRIR ARQUIVO</label>
+        <br>
+        <br>
+        <label>
+            TEXTO ENCRIPTADO:
+        </label>
+        <br>
+        <textarea id="txtCrypt">
+        </textarea>
+        <br>
+        <div class="row">
+            <label>
+                CHAVE:
+            </label>
+            <input id="keyDecrypt" type="text" placeholder="CHAVE DE CRIPTOGRAFIA">
+            <button onclick="Descripta()">DESCRIPTOGRAFAR</button>
+        </div>
+        
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="./cryptografador.js"></script>
+<script src="./design.js"></script>
+</html>

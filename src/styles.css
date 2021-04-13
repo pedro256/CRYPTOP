@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+*{
+    font-family: 'Poppins';
+    margin: 0.5rem;
+    background-color: #ffff;
+}
+
+.title h1{
+    color: #323232;
+    font-weight: 1200;
+    text-align: center;
+}
+.container{
+    padding: 8px;
+    display: block;
+    width: 100%;
+}
+.container button{
+    color: beige;
+    font-weight: 600;
+    background-color: blueviolet;
+    padding: 0.4rem;
+    border: rgb(157, 53, 255);
+    border-radius: 4px;
+    max-width: 180px;
+    align-items: center;
+}
+.container button > input{
+    background-color: blueviolet;
+    max-width: 120px;
+}
+.container label{
+    text-align: center;
+    font-weight: 600;
+    text-shadow: blueviolet;
+}
+.container textarea{
+    max-width: 80%;
+    width: 80%;
+    height: 280px;
+    border-radius: 8px;
+    border-color: rgb(196, 195, 255);
+    -webkit-transition: 0.5s;
+    color: #323232;
+    font-size: medium;
+    font-weight: 600;
+}
+.container textarea:hover{
+    border-color: blueviolet;
+}
+.container textarea:focus{
+    border: 3px solid blueviolet;
+    outline: none;
+}
+.container input{
+    outline: none;
+    -webkit-transition: 0.3s;
+    border-color: #d8d8d8;
+    padding: 6px;
+    border-radius: 4px;
+    width: 50%;
+    color: #323232;
+    font-size: medium;
+    font-weight: 600;
+}
+.container input:focus{
+    border: 3px solid blueviolet;
+    outline: none;
+}
+.fileLabel {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 1rem;
+}
